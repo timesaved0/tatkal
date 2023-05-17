@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+@font-face {
+    font-family: 'WyMWG';
+    src: url(MouldyCheeseRegular-WyMWG.ttf);
+}
+/*======================================================================
+=================================Nav Bar============================
+=======================================================================*/
+.header{
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid #111;
+    padding: 12px;
+    position: sticky; 
+    top: 0; 
+    left: 0;
+}
+.header nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav .nav-links{
+    display: flex;
+    align-items: center;
+}
+.header nav .nav-links a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+.header nav .nav-links a:hover{
+    color: #0099cc;
+}
+.header nav .nav-links .soc-links{
+    margin-left: 20px;
+}
+.header nav .nav-links .soc-links a{
+    font-size: 22px;
+    margin-left: 15px;
+    padding-left: 9px;
+}
+#btn-menu{
+    display: none;
+}
+/*======================================================================
+=================================Welcome-page============================
+=======================================================================*/
+.welcome-bg img{
+    width: 100%;
+}
+.Land-page {
+    display: none;
+    
+}
+.Welcome-title{
+    display: none;
+}
+.Booking-Cabs{
+    display: none;
+}
+/*======================================================================
+=============================Number Counting============================
+=======================================================================*/
+.Counter{
+    background-color: #3857ff;
+    padding: 15px;  
+}
+.Number-option{
+    font-size: 3em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 25%;
+}
+.opt-title{
+    font-size: 1.1em;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+/*======================================================================
+===========================Meet our application=========================
+=======================================================================*/
+.Application-title p,
+.Features-title p,
+.free-to-use-heading p,
+.How-it-work p,
+.Diverse-fleet-of-cabs p,
+.Reviews-title p,
+.download-title p{
+    text-align: center;
+    padding: 30px 0 5px 0;
+    margin-bottom: 0 !important;
+    font-family: 'WyMWG';
+    font-size: 3.5em;
+}
+.How-it-work p{
+    padding: 0px 0 5px 0 !important;
+}
+.Application-title p span,
+.Features-title p span,
+.free-to-use-heading p span,
+.How-it-work p span,
+.Diverse-fleet-of-cabs p span,
+.Reviews-title p span,
+.download-title p span {
+    font-family: 'WyMWG';
+}
+.Application-subtitle,
+.Feature-subtitle,
+.Reviews-subtitle,
+.download-subtitle {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.Meet-our-application img{
+    padding-top: 15px;
+    width: 70%;
+}
+
+/*======================================================================
+=================================Feature============================
+=======================================================================*/
+
+.feature-option,
+.free-to-use-option{
+    padding: 25px 10px 0 0;
+}
+.feature-option .Feature-img img,
+.free-to-use-option .free-to-use-img img{
+    width: 23%;
+    padding: 5px;
+    margin-right: 10px;
+    float: left;
+}
+.feature-option  .Feature-title,
+.free-to-use-option .free-to-use-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    
+}
+.feature-explain,
+.about-free-to-use{
+    font-size: 1.1em;
+    line-height: 4px;
+
+}
+.tatkal-logo-city img{
+    padding-top: 30px;
+    width: 100%;
+}
+/*======================================================================
+================================How it works===========================
+=======================================================================*/
+.How-its-works-option{
+    padding-left: 9%;
+}
+.working-step img{
+    width: 18%;
+}
+/*======================================================================
+=============================Driver fleet cabs=====================
+=======================================================================*/
+.types-of-cabs{
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+.Diverse-fleet-of-cabs-option img{
+    width: 100%;
+}
+.Diverse-fleet-of-cabs-option{
+    width: 100%;
+    display: flex;
+    animation: slide 15s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-100%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+/*======================================================================
+================================Review===========================
+=======================================================================*/
+.review-option{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.review-option::-webkit-scrollbar {
+    width: 10px;
+}
+.review-option::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 25px;
+}
+.review-option::-webkit-scrollbar-thumb {
+    background: #3857ff;
+    border-radius: 25px; 
+}
+.review-option::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.review-option{
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: scroll;
+    width: 90%;
+    height: 250px;
+}
+.review-option .box{
+    background: #fff;
+    width: calc(33% - 10px);
+    padding: 25px;
+    border-radius: 3px;
+}
+.review-option .box i.quote{
+    font-size: 20px;
+    color: #3857ff;
+}
+.review-option .box .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.box .info .name{
+    font-weight: 600;
+    font-size: 17px;
+}
+.box .info .job{
+    font-size: 16px;
+    font-weight: 500;
+    color: #3857ff;
+}
+.box .info .stars{
+    margin-top: 2px;
+}
+.box .info .stars i{
+      color: #3857ff;
+}
+
+/*======================================================================
+===============================Tutorial===========================
+=======================================================================*/
+.tutorial-download-button{
+    margin-top: 10px;
+}
+.tutorial-download-button a p{
+    background-color: #3857ff;
+    padding: 10px;
+    color: white;
+    border-radius: 25px;
+    width: 55%;
+    font-size: 1.2em;
+}
+.tutorial-download-button a{
+    text-decoration: none;
+}.tutorial-download-button a p:hover{
+    text-decoration: none;
+    background-color: #f1f1f1;
+    color: #3857ff;
+}
+/*======================================================================
+=================================Footer============================
+=======================================================================*/
+footer{
+    background-color: #3857ff;
+    padding: 15px;
+}
+ footer span a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+ } 
+footer span a:hover{
+    color: #555;
+}
+.reserved{
+    color: white;
+    padding: 10px;
+}
+/*======================================================================
+=================================Media Query============================
+=======================================================================*/
+@media(max-width:480px){
+    #tatkallogo{
+        padding-left: 15px;
+        width: 30%;
+    }
+}
+@media(min-width: 480px) {
+    #tatkallogo{
+        padding-left: 20px;
+        width: 10.8%;
+    }
+}
+@media(max-width:1000px){
+    .header nav{
+        width: 100%;
+        padding: 0 0px;
+    }
+    .header nav .nav-links a{
+        font-size: 18px;
+        margin: 0px;
+    }
+    .header nav .nav-links .soc-links{
+        margin-left: 30px;
+    }
+}
+@media(max-width:1000px){
+    
+#btn-menu{
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 22px;
+    /*border: 2px solid #fff;*/
+    color: white;
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    line-height: 33px;
+}
+.header nav .nav-links{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: black;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-top: 1px solid white;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.3s;
+}
+.header nav .nav-links.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.header nav .nav-links a{
+    display: block;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #d4d4d4a7;
+}
+.header nav .nav-links .soc-links{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    padding: 20px 0 10px;
+}
+.header nav .nav-links .soc-links a{
+    font-size: 25px;
+    text-align: center;
+    margin-left: 0;
+    padding: 0;
+    border-bottom: none;
+}
+}
+
+/*============================
+========Counting Number=======
+============================*/
+@media(max-width:767px){
+    .welcome-bg img{
+        display: none;
+    }
+    .Land-page, 
+    .Welcome-title{
+        display: contents;
+    }
+    .Land-page img{
+        width: 100%;
+    }
+    .welcome-to-tatkal-cabs {
+        padding:20px ;
+        width: 70%;
+    }
+    .Welcome-Sub-title{
+        width: 85%;
+        font-size: 1.1em;
+        line-height: 20px;
+    }
+    .Counter{
+        padding: 5px;  
+    }
+    .Number-option{
+        font-size: 1.3em;
+    }
+    .opt-title{
+        font-size: 12px;
+    }
+}
+/*============================
+========Meet our Application=======
+============================*/
+@media(max-width:767px){
+.Application-title p,
+.Features-title p,
+.free-to-use-heading p,
+.How-it-work p,
+.Diverse-fleet-of-cabs p,
+.Reviews-title p,
+.download-title p{
+    text-align: center;
+    padding: 10px 0 0px 0;
+    font-size: 2em;
+}
+.How-it-work p{
+    padding: 0px 0 5px 0 !important;
+}
+.Application-subtitle,
+.Feature-subtitle,
+.Reviews-subtitle,
+.download-subtitle {
+    text-align: center;
+    font-size: 1em;
+    padding: 0 30px 0 30px;
+    line-height: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+.Meet-our-application img{
+    padding-top: 5px;
+    width: 70%;
+}
+}
+/*============================
+========Feature=======
+============================*/
+@media (max-width:980px) {
+    
+    .feature-option .Feature-img img,
+    .free-to-use-option .free-to-use-img img{
+    width: 15%;
+    padding: 5px;
+    margin-right: 5px;
+    float: left;
+}
+}@media (max-width:370px) {
+.feature-option .Feature-img img,
+.free-to-use-option .free-to-use-img img{
+    margin-top: 20px;
+    margin-right: 5px;
+}
+}
+@media (max-width:768px) {
+.feature-option .Feature-img img,
+.free-to-use-option .free-to-use-img img{
+    width: 20%;
+    padding: 5px;
+    margin-right: 5px;
+    float: left;
+}
+    
+.feature-option,
+.free-to-use-option{
+    padding: 13px 10px 0 10px;
+    display: inline;
+}
+
+.feature-option  .Feature-title,
+.free-to-use-option .free-to-use-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    
+}
+.feature-explain,
+.about-free-to-use{
+    font-size:15px;
+    line-height: 5px;
+
+}
+}
+
+/*============================
+========how ot works=======
+============================*/
+@media(max-width:767px){
+    .How-its-works-option{
+        padding-left: 15%;
+    }
+    .working-step img{
+        width: 80%;
+    }
+}
+/*============================
+========Review=======
+============================*/
+@media (max-width: 1045px) {
+    .review-option .box{
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+@media (max-width: 702px) {
+    .Reviews-title p{
+        line-height: 35px;
+    }
+    .review-option .box{
+    width: 100%;
+  }
+  .review-option{
+      height: 310px;
+  }
+}
+/*============================
+========tutorial=======
+============================*/
+@media (max-width: 702px) {
+.tutorial-download-button a p{
+    width: 90%;
+}
+/*============================
+========Footer=======
+============================*/
+footer{
+    background-color: #3857ff;
+    padding: 8px;
+}
+ footer span a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+ }
+.reserved{
+    font-size: 12px;
+} 
+}
